@@ -11,10 +11,10 @@
     "yarn": ">=0.20.3"
   },
   "scripts": {
-    "start": "docker run --name ubuntu-box -it -d ubuntu-box",
+    "start": "docker run --name ubuntu-box -it -d ubuntu",
     "build": "npm run docker:build",
     "docker:build": "docker build -t 'ubuntu-box' .",
-    "docker:shell": "docker exec -it ubuntu-box bash",
+    "docker:shell": "docker exec -it ubuntu bash",
     "docker:kill:all": "docker kill $(docker ps -aq)",
     "docker:images": "docker images",
     "docker:ps": "docker ps -a"

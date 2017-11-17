@@ -15,6 +15,8 @@ ADD package.json /app/
 # Setup apt packages for images
 RUN apt-get update
 RUN apt-get -y install vim
+RUN apt-get -y install mongo
+
 
 # copy all file from current dir to /app in container
 COPY . /app/
