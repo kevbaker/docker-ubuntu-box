@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "START DOCKER CONTAINER",
-    "build": "docker build -t ”docker-ubuntu-box' .",
-    "docker:build": "docker-compose up -d",
+    "build": "npm run build",
+    "docker:build": "docker build -t 'docker-ubuntu-box' .",
     "docker:shell": "docker-compose build",
     "docker:kill:all": "docker kill $(docker ps -q)",
     "docker:images": "docker images",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KunalKapadia/express-mongoose-es6-rest-api.git"
+    "url": "git@github.com:kevbaker/docker-ubuntu-box.git"
   },
   "keywords": [
     "ubuntu",
