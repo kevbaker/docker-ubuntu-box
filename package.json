@@ -11,13 +11,13 @@
     "yarn": ">=0.20.3"
   },
   "scripts": {
-    "start": "START DOCKER CONTAINER",
-    "build": "npm run build",
-    "docker:build": "docker build -t 'docker-ubuntu-box' .",
-    "docker:shell": "docker-compose build",
-    "docker:kill:all": "docker kill $(docker ps -q)",
+    "start": "docker run --name ubuntu-box -it -d ubuntu-box",
+    "build": "npm run docker:build",
+    "docker:build": "docker build -t 'ubuntu-box' .",
+    "docker:shell": "docker exec -it ubuntu-box bash",
+    "docker:kill:all": "docker kill $(docker ps -aq)",
     "docker:images": "docker images",
-    "docker:ps": "docker ps"
+    "docker:ps": "docker ps -a"
   },
   "repository": {
     "type": "git",
