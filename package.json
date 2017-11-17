@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "START DOCKER CONTAINER",
-    "build": "",
+    "build": "docker build -t ”docker-ubuntu-box' .",
     "docker:build": "docker-compose up -d",
     "docker:shell": "docker-compose build",
     "docker:kill:all": "docker kill $(docker ps -q)",
@@ -24,17 +24,8 @@
     "url": "git@github.com:KunalKapadia/express-mongoose-es6-rest-api.git"
   },
   "keywords": [
-    "express",
-    "node",
-    "node.js",
-    "mongodb",
-    "mongoose",
-    "es6",
-    "mocha",
-    "istanbul",
-    "REST",
-    "API",
-    "boilerplate"
+    "ubuntu",
+    "linux"
   ],
   "dependencies": {
 
